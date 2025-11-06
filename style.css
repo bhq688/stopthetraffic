@@ -1,0 +1,212 @@
+:root {
+  --nav-bg: #0b0b0b;
+  --nav-text: #ffffff;
+  --accent-red: #c50000;
+  --mid-gray: #d0d0d0;
+  --container-max: 1100px;
+  --radius: 12px;
+  --gap: 14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+.site-header {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand .mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff0, #ffffff16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.brand h1 {
+  font-size: 18px;
+  margin: 0;
+  color: var(--nav-text);
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--nav-text);
+  transition: transform .12s ease, background .12s ease, opacity .12s ease;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+nav a.primary {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* FOOTER CAMPAIGN STRIP */
+.campaign-footer {
+  background: var(--accent-red);
+  color: white;
+  text-align: center;
+  padding: 36px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.campaign-footer .logo-part {
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.campaign-footer .campaign-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.campaign-footer p.tagline {
+  margin: 6px 0 0 0;
+  opacity: 0.95;
+}
+
+/* Mid gray illustration + text area */
+.hero-illustration {
+  background: var(--mid-gray);
+  padding: 42px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-inner {
+  max-width: var(--container-max);
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.illustration {
+  flex: 1 1 380px;
+  min-width: 280px;
+  max-width: 520px;
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  flex: 1 1 360px;
+  min-width: 260px;
+}
+
+.hero-text h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.hero-text p {
+  margin: 0 0 14px 0;
+  line-height: 1.5;
+}
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid rgba(0,0,0,0.08);
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav-inner {
+    padding: 12px;
+  }
+  .brand h1 {
+    font-size: 16px;
+  }
+  .campaign-footer .campaign-title {
+    font-size:

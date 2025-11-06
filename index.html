@@ -4,91 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stop the Traffic — Etusivu</title>
-  <style>
-    :root{
-      --nav-bg: #0b0b0b; /* lähes musta */
-      --nav-text: #ffffff;
-      --accent-red: #c50000; /* intensiivinen punainen */
-      --mid-gray: #d0d0d0; /* keskiharmaa alue */
-      --container-max: 1100px;
-      --radius: 12px;
-      --gap: 14px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-
-    html,body{height:100%;margin:0;padding:0;background:#fafafa;color:#111}
-    a{color:inherit}
-
-    /* NAVIGATION */
-    .site-header{
-      background:var(--nav-bg);
-      color:var(--nav-text);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-      position:sticky;top:0;z-index:50;
-    }
-    .nav-inner{
-      max-width:var(--container-max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 20px;
-    }
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand .mark{
-      width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#fff0,#ffffff16);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.06)
-    }
-    .brand h1{font-size:18px;margin:0;color:var(--nav-text);font-weight:600}
-
-    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:var(--gap);align-items:center}
-    nav a{
-      display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;color:var(--nav-text);
-      transition:transform .12s ease,background .12s ease,opacity .12s ease;
-    }
-    nav a:hover{transform:translateY(-2px);opacity:0.95}
-    nav a.primary{
-      background: rgba(255,255,255,0.06);
-      border:1px solid rgba(255,255,255,0.04);
-    }
-
-    /* FOOTER CAMPAIGN STRIP */
-    .campaign-footer{
-      background:var(--accent-red);
-      color:white;text-align:center;padding:36px 18px;display:flex;flex-direction:column;align-items:center;gap:10px;
-    }
-    .campaign-footer .logo-part{
-      width:84px;height:84px;border-radius:18px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;box-shadow:inset 0 1px 0 rgba(255,255,255,0.06);
-    }
-    .campaign-footer .campaign-title{font-size:28px;font-weight:700;margin:0}
-    .campaign-footer p.tagline{margin:6px 0 0 0;opacity:0.95}
-
-    /* Mid gray illustration + text area */
-    .hero-illustration{
-      background:var(--mid-gray);padding:42px 20px;display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:center;
-    }
-    .hero-inner{max-width:var(--container-max);width:100%;display:flex;gap:32px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .illustration{
-      flex:1 1 380px;min-width:280px;max-width:520px;padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent);
-      display:flex;align-items:center;justify-content:center;height:320px;box-sizing:border-box;}
-    .illustration svg{width:100%;height:100%;max-height:280px}
-    .hero-text{flex:1 1 360px;min-width:260px}
-    .hero-text h2{margin:0 0 10px 0;font-size:22px}
-    .hero-text p{margin:0 0 14px 0;line-height:1.5}
-    .cta-row{display:flex;gap:12px}
-    .btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
-    .btn.primary{background:var(--nav-bg);color:var(--nav-text)}
-    .btn.ghost{background:transparent;border:2px solid rgba(0,0,0,0.08)}
-
-    /* Responsive tweaks */
-    @media (max-width:720px){
-      .nav-inner{padding:12px}
-      .brand h1{font-size:16px}
-      .campaign-footer .campaign-title{font-size:20px}
-      .illustration{height:220px}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="nav-inner">
       <div class="brand">
         <div class="mark" aria-hidden="true">
-          <!-- pieni logomark -->
           <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="12" cy="12" r="8" fill="white" opacity="0.12"></circle>
             <path d="M7 12h10" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.9" />
@@ -107,10 +29,8 @@
     </div>
   </header>
 
-  <!-- Intensiivinen punainen footer-tyylinen kampanjapalkki navigaation alla -->
   <section class="campaign-footer" role="region" aria-labelledby="campaign-title">
     <div class="logo-part" aria-hidden="true">
-      <!-- osalogo / symboli -->
       <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="2" y="2" width="20" height="20" rx="6" fill="white" opacity="0.14"></rect>
         <path d="M7 12h10M12 7v10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -120,11 +40,9 @@
     <p class="tagline">Yhdessä lopetetaan ihmiskauppa ja moderni orjuus.</p>
   </section>
 
-  <!-- Keskiharmaa alue kuvituskuvalle ja tekstille -->
   <main class="hero-illustration">
     <div class="hero-inner">
       <div class="illustration" aria-hidden="true">
-        <!-- yksinkertainen inline SVG kuvitukseksi -->
         <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Kuvitus: seestynyt kaupunkinäkymä">
           <rect width="800" height="500" rx="16" fill="#e9e9e9" />
           <g transform="translate(60,50)">
@@ -148,11 +66,10 @@
   </main>
 
   <footer style="padding:28px 20px;text-align:center;color:#666;">
-    <div style="max-width:var(--container-max);margin:0 auto;">&copy; <span id="year"></span> Stop the Traffic. Kaikki oikeudet pidätetään.</div>
+    <div style="max-width:1100px;margin:0 auto;">&copy; <span id="year"></span> Stop the Traffic. Kaikki oikeudet pidätetään.</div>
   </footer>
 
   <script>
-    // Aseta automaattinen vuosiluku
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
