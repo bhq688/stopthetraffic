@@ -313,3 +313,9 @@ nav a.primary {
   .campaign-footer .campaign-title {
     font: size 12px;
   }
+  .float-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+  }
