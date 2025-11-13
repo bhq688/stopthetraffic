@@ -138,7 +138,7 @@ nav a.primary {
   text-align: center;
 }
 
-/* Kuvituskuva */
+/* Kuvituskuva toiselle sivulle */
 .campaign-image {
   width: 100vw;
   max-width: 600px;
@@ -166,6 +166,14 @@ nav a.primary {
   padding: 4rem 2rem;
 }
 
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  line-height: 1.7;
+  color: #222;
+}
+
 /* Navigaatiopalkin keskitys */
 .hero-inner {
   display: flex;
@@ -177,30 +185,45 @@ nav a.primary {
   gap: 3rem;
 }
 
-/* Kuva */
-.illustration img.hero-image {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+
+/* Kuva vie nyt ison osan tilasta */
+.hero-image-container {
+  flex: 1 1 55%; /* kuva vie ~55% leveydestä */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Tekstiosa */
+.hero-image {
+  float:left;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Teksti asettuu vierelle, ei kierrä */
 .hero-text {
-  max-width: 500px;
+  flex: 1 1 40%;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #222;
 }
 
 .hero-text h1 {
+  overflow:hidden;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #222;
 }
 
 .hero-text p {
+  overflow: hidden;
   font-size: 1.1rem;
-  line-height: 1.6;
   color: #444;
-  margin-bottom: 1.5rem;
+  
 }
 
 /* Painike */
@@ -226,6 +249,7 @@ nav a.primary {
     text-align: center;
     gap: 2rem;
   }
+
 
   .hero-text {
     max-width: 100%;
@@ -277,4 +301,5 @@ nav a.primary {
     font-size: 16px;
   }
   .campaign-footer .campaign-title {
-    font-size:
+    font: size 12px;
+  }
