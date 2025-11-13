@@ -145,7 +145,6 @@ nav a.primary {
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   object-fit: cover;
-  opacity: 0.8;
 }
 
 .campaign-image::after {
