@@ -174,7 +174,7 @@ nav a.primary {
   color: #222;
 }
 
-/* Navigaatiopalkin keskitys */
+/* Navigaatiopalkin keskitys
 .hero-inner {
   display: flex;
   flex-direction: row;
@@ -184,6 +184,7 @@ nav a.primary {
   margin: 0 auto;
   gap: 3rem;
 }
+  */
 
 
 
@@ -224,6 +225,15 @@ nav a.primary {
   font-size: 1.1rem;
   color: #444;
   
+}
+.float-image {
+  float: left;              /* kuva vasemmalle, teksti kiertää oikealta */
+  width: 60%;
+  max-width: 500px;
+  margin: 0 2rem 1rem 0;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 /* Painike */
@@ -302,4 +312,10 @@ nav a.primary {
   }
   .campaign-footer .campaign-title {
     font: size 12px;
+  }
+  .float-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
   }
