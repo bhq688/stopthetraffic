@@ -319,3 +319,76 @@ nav a.primary {
     margin: 0 auto 1.5rem auto;
     width: 100%;
   }
+
+  /* --- Infokorttien style --- */
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  perspective: 1000px; /* mahdollistaa 3D käännön */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+.card.is-flipped .card-inner,
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card-front {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-front img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.card-front h3 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.card-back {
+  background: #111;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
