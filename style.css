@@ -252,75 +252,7 @@ nav a.primary {
   background-color: #555;
 }
 
-/* --- Responsiivisuus mobiilille --- */
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .illustration img.hero-image {
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-}
-
-
-.cta-row {
-  display: flex;
-  gap: 12px;
-}
-
-.btn {
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-weight: 700;
-  border: 0;
-  cursor: pointer;
-}
-
-.btn.primary {
-  background: var(--nav-bg);
-  color: var(--nav-text);
-}
-
-.btn.ghost {
-  background: transparent;
-  border: 2px solid rgba(0,0,0,0.08);
-}
-
-/* Responsive tweaks */
-@media (max-width: 720px) {
-  .nav-inner {
-    padding: 12px;
-  }
-  .brand h1 {
-    font-size: 16px;
-  }
-  .campaign-footer .campaign-title {
-    font: size 12px;
-  }
-  .float-image {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    width: 100%;
-  }
-
-  /* --- Infokorttien style --- */
+ /* --- Infokorttien style --- */
 
 .info-cards {
   display: flex;
@@ -392,3 +324,75 @@ nav a.primary {
   align-items: center;
   justify-content: center;
 }
+
+/* --- Responsiivisuus mobiilille --- */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .illustration img.hero-image {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid rgba(0,0,0,0.08);
+}
+
+ 
+
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav-inner {
+    padding: 12px;
+  }
+  .brand h1 {
+    font-size: 16px;
+  }
+  .campaign-footer .campaign-title {
+    font: size 12px;
+  }
+  .float-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+  }
+

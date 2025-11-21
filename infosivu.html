@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stop the Traffic — Moderni orjuus ja ihmiskauppa</title>
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
   <header class="site-header">
@@ -42,10 +43,6 @@
      <div class="hero-text">
        
       <!-- Korttiosio alkaa -->
-
-      <script src="script.js"></script>
-
-      <!-- yläpuolella linkki JS-->
 
       
       <div class="info-cards">
@@ -98,5 +95,13 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <!--Alla oleva koodi saa kortin kääntymään-->
+  <script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-flipped');
+    });
+  });
+</script>
 </body>
 </html>
