@@ -406,3 +406,18 @@ nav a.primary {
     width: 100%;
   }
 
+/*Mitä voin tehdä sivun linkkikortit */
+.w3-button {
+  display: inline-block;
+  padding: 6px 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.25s ease;
+}
+
+.w3-button:hover {
+  background-color: #555;
+}
