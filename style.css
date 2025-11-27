@@ -412,8 +412,7 @@ nav a.primary {
   text-align: center;
   padding: 24px;
   margin: 0 auto 28px;
-  max-width: 600px;
-
+  width: 80%;
   background: #fff;
   border: 1px solid #ddd;          /* Kevyt border */
   border-radius: 10px;             /* Pyöristetyt kulmat */
