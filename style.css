@@ -406,9 +406,7 @@ nav a.primary {
     width: 100%;
   }
 
-/* ================================
-   Kortit — vain tälle sivulle
-   ================================ */
+
 .mitavointehda-cards {
   display: grid;
   gap: 20px;                /* väli korttien välillä */
