@@ -406,29 +406,54 @@ nav a.primary {
     width: 100%;
   }
 
-/*Mitä voin tehdä sivun linkkikortit */
-
-.w3-card-4 {
-  text-align: center;
-  padding: 24px;
-  margin: 0 auto 28px;
-  width: 80%;
-  background: #fff;
-  border: 1px solid #ddd;          /* Kevyt border */
-  border-radius: 10px;             /* Pyöristetyt kulmat */
-
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);  /* Pehmeä varjo */
-  transition: transform 0.25s ease,
-              box-shadow 0.25s ease;
+/* ================================
+   Kortit — vain tälle sivulle
+   ================================ */
+.mitavointehda-cards {
+  display: grid;
+  gap: 20px;                /* väli korttien välillä */
+  justify-content: center;   /* keskitys */
+  grid-template-columns: 1fr; /* mobiilissa yksi sarake */
+  padding: 20px;
 }
 
+@media (min-width: 600px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(2, 1fr); /* kaksi korttia vierekkäin */
+  }
+}
 
-/* Varmistetaan keskitys myös kontainerin sisällä */
+@media (min-width: 900px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(3, 1fr); /* kolme korttia vierekkäin */
+  }
+}
+
+@media (min-width: 1200px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(4, 1fr); /* neljä korttia vierekkäin */
+  }
+}
+
+/* Korttien ulkoasu */
+.w3-card-4 {
+  max-width: 100%;
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Varmistetaan keskitys kortin sisällä */
 .w3-container {
   text-align: center;
 }
 
-
+/* Button */
 .w3-button { 
   display: inline-block;
   padding: 10px 18px;
@@ -441,7 +466,6 @@ nav a.primary {
   margin-top: 10px;
 }
 
-/* Button hover */
 .w3-button:hover {
   background-color: #555;
   transform: translateY(-2px);
