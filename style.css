@@ -389,54 +389,6 @@ nav a.primary {
   border: 2px solid rgba(0,0,0,0.08);
 }
 
- 
-
-
-/* Responsive tweaks */
-@media (max-width: 720px) {
-  .nav-inner {
-    padding: 12px;
-  }
-  .brand h1 {
-    font-size: 16px;
-  }
-  .campaign-footer .campaign-title {
-    font: size 12px;
-  }
-  .float-image {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    width: 100%;
-  }
-
-
-.mitavointehda-cards {
-  display: grid;
-  gap: 20px;                /* väli korttien välillä */
-  justify-content: center;   /* keskitys */
-  grid-template-columns: 1fr; /* mobiilissa yksi sarake */
-  padding: 20px;
-}
-
-@media (min-width: 600px) {
-  .mitavointehda-cards {
-    grid-template-columns: repeat(2, 1fr); /* kaksi korttia vierekkäin */
-  }
-}
-
-@media (min-width: 900px) {
-  .mitavointehda-cards {
-    grid-template-columns: repeat(3, 1fr); /* kolme korttia vierekkäin */
-  }
-}
-
-@media (min-width: 1200px) {
-  .mitavointehda-cards {
-    grid-template-columns: repeat(4, 1fr); /* neljä korttia vierekkäin */
-  }
-}
-
 /* Korttien ulkoasu */
 .w3-card-4 {
   max-width: 100%;
@@ -471,4 +423,52 @@ nav a.primary {
 .w3-button:hover {
   background-color: #555;
   transform: translateY(-2px);
+}
+
+.mitavointehda-cards {
+  display: grid;
+  gap: 20px;                /* väli korttien välillä */
+  justify-content: center;   /* keskitys */
+  grid-template-columns: 1fr; /* mobiilissa yksi sarake */
+  padding: 20px;
+}
+
+
+ 
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav-inner {
+    padding: 12px;
+  }
+  .brand h1 {
+    font-size: 16px;
+  }
+  .campaign-footer .campaign-title {
+    font: size 12px;
+  }
+  .float-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+  }
+
+
+
+@media (min-width: 600px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(2, 1fr); /* kaksi korttia vierekkäin */
+  }
+}
+
+@media (min-width: 900px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(3, 1fr); /* kolme korttia vierekkäin */
+  }
+}
+
+@media (min-width: 1200px) {
+  .mitavointehda-cards {
+    grid-template-columns: repeat(4, 1fr); /* neljä korttia vierekkäin */
+  }
 }
