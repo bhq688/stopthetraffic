@@ -385,14 +385,13 @@ nav a.primary {
   padding: 20px;
 }
 
-/*Videoupotusten responsiivisuus*/
-
+/* Videoupotusten responsiivisuus */
 .video-wrapper {
   position: relative;
   width: 100%;
-   max-width: 700px;   /* <-- Tämä rajoittaa leveyden */
-  margin: 0 auto;     /* <-- Keskittää videon */
-  padding-bottom: 56.25%; /* 16:9 suhde */
+  max-width: 600px;  /* voit säätää haluamaksesi */
+  margin: 0 auto;
+  padding-bottom: 30%; /* aito 16:9 – video ei vääristy */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -406,6 +405,7 @@ nav a.primary {
   height: 100%;
   border: 0;
 }
+
 
 
 
