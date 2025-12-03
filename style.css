@@ -47,16 +47,6 @@ a {
   gap: 10px;
 }
 
-.brand .mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #fff0, #ffffff16);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255,255,255,0.06);
-}
 
 .brand h1 {
   font-size: 18px;
@@ -109,7 +99,6 @@ nav a.primary {
   width: 125px;
   height: 125px;
   border-radius: 18px;
-  background: rgba(255,255,255,0.12);
   display: flex;
   align-items: center;
   justify-content: center;
