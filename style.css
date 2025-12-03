@@ -339,6 +339,53 @@ nav a.primary {
   color:#d0d0d0
 }
 
+/* Mitä voin tehdä - korttien ulkoasu */
+.w3-card-4 {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 24px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Varmistetaan keskitys kortin sisällä */
+.w3-container {
+  text-align: center;
+}
+
+/* Button */
+.w3-button { 
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.w3-button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.mitavointehda-cards {
+  display: grid;
+  gap: 60px;                /* väli korttien välillä */
+  justify-content: center;   /* keskitys */
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* mobiilissa yksi sarake */
+  padding: 20px;
+}
+
+
 /* --- Responsiivisuus mobiilille --- */
 @media (max-width: 768px) {
   .hero-inner {
@@ -389,51 +436,6 @@ nav a.primary {
   border: 2px solid rgba(0,0,0,0.08);
 }
 
-/* Korttien ulkoasu */
-.w3-card-4 {
-  max-width: 100%;
-  text-align: center;
-  padding: 24px;
-  margin: 0;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Varmistetaan keskitys kortin sisällä */
-.w3-container {
-  text-align: center;
-}
-
-/* Button */
-.w3-button { 
-  display: inline-block;
-  padding: 10px 18px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.25s ease, transform 0.2s ease;
-  margin-top: 10px;
-}
-
-.w3-button:hover {
-  background-color: #555;
-  transform: translateY(-2px);
-}
-
-.mitavointehda-cards {
-  display: grid;
-  gap: 20px;                /* väli korttien välillä */
-  justify-content: center;   /* keskitys */
-  grid-template-columns: 1fr; /* mobiilissa yksi sarake */
-  padding: 20px;
-}
-
-
  
 /* Responsive tweaks */
 @media (max-width: 720px) {
@@ -452,6 +454,7 @@ nav a.primary {
     margin: 0 auto 1.5rem auto;
     width: 100%;
   }
+}
 
 
 
