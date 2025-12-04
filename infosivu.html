@@ -8,24 +8,27 @@
   
 </head>
 <body>
+  
   <header class="site-header">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="mark">
-          <a href="index.html"><img src="Logopunainen.png" alt="Stop the Traffic punainen logo" height="50"></a>
+  <div class="nav-inner">
+    <button class="nav-toggle" aria-label="Avaa valikko">
+      <img src="Logopunainen.png" alt="Stop the Traffic logo" height="50">
+    </button>
 
-        </div>
-      </div>
+    <nav aria-label="Päävalikko">
+      <ul class="nav-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a class="primary" href="infosivu.html">Moderni orjuus ja ihmiskauppa</a></li>
+        <li><a href="mitavointehda.html">Mitä voin tehdä?</a></li>
+      </ul>
+    </nav>
+  </div>
 
-      <nav aria-label="Päävalikko">
-        <ul>
-          <li><a href="index.html">Stop the Traffic!</a></li>
-          <li><a class="primary" href="infosivu.html">Moderni orjuus ja ihmiskauppa</a></li>
-          <li><a href="mitavointehda.html">Mitä voin tehdä?</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Alla oleva linkitys pidetään tässä, että ei kumoa infokorttien kääntämistä, infosivulla se on aivan ennen bodyn loppua-->
+  <script src="script.js"></script>
+
+</header>
+
 
 <section class="campaign-footer" role="region" aria-label="Kampanjakuva ja viesti">
 
@@ -151,5 +154,6 @@
     });
   });
 </script>
+
 </body>
 </html>
