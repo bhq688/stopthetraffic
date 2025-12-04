@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-/* NAVIGATION */
+/* Navigaatio */
 .site-header {
   background: var(--nav-bg);
   color: var(--nav-text);
@@ -33,13 +33,33 @@ a {
 }
 
 .nav-inner {
-  max-width: var(--container-max);
-  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 14px 20px;
+  position: relative;
   justify-content: center;
-  padding: 18px 20px;
 }
+
+/* Hampurilaispainike – oletuksena piilossa */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.nav-toggle span {
+  width: 26px;
+  height: 3px;
+  background: #fff;     /* vaihda jos navigaatio ei ole tumma */
+  display: block;
+  transition: 0.3s;
+}
+
 
 .brand {
   display: flex;
@@ -57,11 +77,10 @@ a {
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
-  gap: var(--gap);
-  align-items: center;
+  gap: 2rem;
 }
 
 nav a {
@@ -82,6 +101,8 @@ nav a.primary {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.04);
 }
+
+
 
 /* FOOTER CAMPAIGN STRIP */
 .campaign-footer {
@@ -487,3 +508,36 @@ nav a.primary {
     grid-template-columns: repeat(4, 1fr); /* neljä korttia vierekkäin */
   }
 }
+
+/* --- MOBIILINAVIGAATIO --- */
+@media (max-width: 768px) {
+
+  /* Näytetään hampurilainen mobiilissa */
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Piilotetaan valikko aluksi */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 12px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  /* Kun JS lisää .open → näytetään */
+  nav ul.open {
+    display: flex;
+  }
+
+  /* Siirrä nav keskelle */
+  .nav-inner {
+    justify-content: center;
+    position: relative;
+  }
+}
+
