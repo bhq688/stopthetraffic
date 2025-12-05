@@ -407,7 +407,7 @@ nav a.primary {
   padding: 20px;
 }
 
-/* Videoupotusten responsiivisuus */
+/* Videoupotusten responsiivisuus infosivulla */
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -426,6 +426,29 @@ nav a.primary {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Asettelu Mitä voin tehdä- videolle ja tekstille */
+.video-text-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-direction: row-reverse;
+}
+
+/* Videokolumni */
+.video-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Tekstikolumni */
+.text-column {
+  flex: 1;
+  min-width: 280px;
 }
 
 
@@ -546,7 +569,7 @@ nav a.primary {
     display: flex;
   }
 
-  /* Siirrä nav keskelle */
+  /* Siirtää nav keskelle */
   .nav-inner {
     justify-content: center;
     position: relative;
@@ -555,6 +578,12 @@ nav a.primary {
   /* Logo ei näy mobiilissa toista kertaa muiden nappien kanssa kun valikon avaa */
   .nav-menu .nav-logo {
     display: none;
+  }
+  
+  /* Mitä voin tehdä - videoupotus mobiilissa */
+    .video-text-container {
+    flex-direction:column-reverse;
+    text-align: center;
   }
 }
 
