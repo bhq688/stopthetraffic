@@ -32,6 +32,18 @@ a {
   z-index: 50;
 }
 
+/* LOGO NAVISSA */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -148,7 +160,7 @@ nav a.primary {
   text-align: center;
 }
 
-/* Kuvituskuva toiselle sivulle */
+/* Kuvituskuva toiselle ja kolmannelle sivulle */
 .campaign-image {
   width: 95%;
   max-width: 600px;
@@ -538,6 +550,11 @@ nav a.primary {
   .nav-inner {
     justify-content: center;
     position: relative;
+  }
+
+  /* Logo ei näy mobiilissa toista kertaa muiden nappien kanssa kun valikon avaa */
+  .nav-menu .nav-logo {
+    display: none;
   }
 }
 
