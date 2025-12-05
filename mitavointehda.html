@@ -8,22 +8,27 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="nav-inner">
-      <div class="brand">
-        <div class="mark">
-          <a href="index.html"><img src="Logopunainen.png" alt="Stop the Traffic punainen logo" height="50"></a>
-        </div>
-      </div>
+  <div class="nav-inner">
+    <button class="nav-toggle" aria-label="Avaa valikko">
+      <img src="Logopunainen.png" alt="Stop the Traffic logo" height="50">
+    </button>
 
-      <nav aria-label="Päävalikko">
-        <ul>
-          <li><a href="index.html">Stop the Traffic!</a></li>
-          <li><a href="infosivu.html">Moderni orjuus ja ihmiskauppa</a></li>
-          <li><a class="primary" href="mitavointehda.html">Mitä voin tehdä?</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <nav aria-label="Päävalikko">
+      <ul class="nav-menu">
+        <li class="logo-link">
+          <a href="index.html">
+            <img src="Logopunainen.png" class="nav-logo" alt="Etusivulle" height="40"></a></li>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="infosivu.html">Moderni orjuus ja ihmiskauppa</a></li>
+        <li><a class="primary" href="mitavointehda.html">Mitä voin tehdä?</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Alla oleva linkitys pidetään tässä, että ei kumoa infokorttien kääntämistä, infosivulla se on aivan ennen bodyn loppua-->
+  <script src="script.js"></script>
+
+</header>
 
   <section class="campaign-footer" role="region" aria-label="Kampanjakuva ja viesti">
     <div class="campaign-content">
@@ -74,12 +79,31 @@
         <button class="w3-button">Liity sähköpostilistalle</button>
       </div>
 <!-- Korttiosio päättyy-->
- 
-    <div class="video-wrapper">
-      <iframe src="https://youtu.be/82uQ8LzS9rk?si=igX6kPwKz7" title="What is modern slavery?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+
 
     </div>
+    
+    <section class="video-text-section">
+  <div class="video-text-container">
+
+    <div class="video-column">
+      <div class="video-wrapper">
+        <iframe width="935" height="526" src="https://www.youtube.com/embed/EHv7O5DNNCE" title="Human Trafficking: Survivor Stories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="text-column">
+      <h2>Apusi vaikuttaa oikeasti! Ihmiskaupasta ja orjuudesta on mahdollista selviytyä.</h2>
+      <p>
+        Me pystymme vaikuttamaan mitä maailmalla tapahtuu! Vieressä näet upotuksen YouTube-videosta, jossa ihmiskaupan uhrit kertovat tarinansa. Video on julkaistu UM Human Trafficking Collaboration kanavalla vuonna 2021. Sivun on siis luonut vapaasti suomennettuna Michiganin yliopiston ihmiskaupan yhteistyöjärjestö. Klikkaa upotusta ja katso video! 
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    
   </main>
 
   <footer style="padding:28px 20px;text-align:center;color:#666;">
@@ -91,3 +115,4 @@
   </script>
 </body>
 </html>
+
