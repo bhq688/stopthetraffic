@@ -413,7 +413,7 @@ nav a.primary {
   width: 100%;
   max-width: 600px;  /* voit säätää haluamaksesi */
   margin: 0 auto;
-  padding-bottom: 30%; /* aito 16:9 – video ei vääristy */
+  padding-bottom: 45%; /* säädetty niin, että toinen video ei ole liian littana ja toinen massiivisen iso */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -431,7 +431,7 @@ nav a.primary {
 /* Asettelu Mitä voin tehdä- videolle ja tekstille */
 .video-text-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Video on asetettu selainnäkymässä olemaan siististi keskemmällä eikä liian ylhäällä tekstiin nähden  */
   gap: 2rem;
   max-width: 1100px;
   margin: 40px auto;
