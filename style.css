@@ -584,6 +584,7 @@ nav a.primary {
     .video-text-container {
     flex-direction:column-reverse;
     text-align: center;
+    align-items: center;
   }
 }
 
